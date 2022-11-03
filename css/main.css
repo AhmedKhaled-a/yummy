@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(15, 13, 13);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+    transition: all .5s;
+}
+
+a:hover {
+    color: rgb(200, 161, 34);
+}
+
+.menu-btn i {
+    color: #000;
+}
+
+.side-menu {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .9s;
+    z-index: 999999;
+}
+
+.links {
+    transform: translateX(-100%);
+}
+
+.toggle-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    z-index: 999999;
+}
+
+.links li {
+    padding: 4rem .7rem;
+    font-size: 18px;
+    opacity: 0;
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-btn i {
+    cursor: pointer;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 8px;
+    transition: all 1s;
+    opacity: 0;
+    color: #000;
+}
+
+.item:hover .layer {
+    top: 0;
+    opacity: 1;
+}
+
+.recipe {
+    color: #000;
+    background-color: #d4edda;
+    padding: .25rem;
+    margin: 1rem .25rem;
+    display: inline-block;
+    border-radius: .25rem;
+}
+
+.tag {
+    padding: .25rem;
+    color: #000;
+    background-color: #f5c6cb;
+    border-radius: .25rem;
+    display: inline-block;
+    margin-top: .25rem;
+}
+
+.area-icon {
+    cursor: pointer;
+}
+
+.area-icon i {
+    color: #e65a50ab
+}
+
+.ingredient {
+    cursor: pointer;
+}
+
+.ingredient i {
+    color: #9ee650ab;
+
+}
+
+.alert {
+    text-align: center;
+    background-color: #f8d7da;
+    margin-top: 10px;
+    color: #000;
+}
